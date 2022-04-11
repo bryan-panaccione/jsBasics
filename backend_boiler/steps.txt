@@ -1,0 +1,22 @@
+touch migration.sql
+touch server.js
+npm init
+npm install express
+npm install pg
+npm install dotenv
+touch steps.txt
+touch .env
+touch .env.template
+set up Pool
+set up dotenv
+touch .gitignore
+add .env and node_modules to gitignore
+npm install --save-dev nodemon
+add type: module to package.json to enable module statements
+create server.js environment with no routes
+create DATABASE donuts_db
+fill out migration file
+run migration file
+start making routes 
+add "dev": "nodemon server.js" to scripts in package.json
+

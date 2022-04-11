@@ -1,0 +1,30 @@
+{
+  "name": "mcsp-assessment-be",
+  "version": "1.0.0",
+  "description": "In order to pass this assessment, you will need to fork and clone down this repository and build a RESTful API from scratch based on the specifications below.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryan-panaccione/mcsp-assessment-be.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bryan-panaccione/mcsp-assessment-be/issues"
+  },
+  "homepage": "https://github.com/bryan-panaccione/mcsp-assessment-be#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

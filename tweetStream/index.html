@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <script src="jquery.js"></script>
+  <script src="data_generator.js"></script>
+  <script defer src="app.js"></script>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <title>Twiddler</title>
+</head>
+
+<body>
+  <div class="heading">
+    <div class="headingTitle">
+      <h1>Welcome to Twiddler, Please send a Twoot</h1>
+      <p>Click a @username to see all twoots from that user (does not work on most recent twoot)</p>
+    </div>
+    <div class="input">
+      <input type="text" class="userInput" placeholder="enter a twoot">
+      <button class="sendTweet">>>></button>
+    </div>
+    <div class="other">
+      <button id="update">UPDATE</button>
+      <button id="streamOn">STREAM</button>
+      <button id="streamOff">STOP STREAM</button>
+    </div>
+  </div>
+  <div class="tweetContainer"></div>
+</body>
+
+</html>

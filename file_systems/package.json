@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "pdf2table": "^0.0.2"
+  }
+}

@@ -1,0 +1,118 @@
+.pixel{
+    height: 8px;
+    width: 8px;
+    background-color: rgb(255, 255, 255);
+    /*border-width: 1px;
+    border-style: solid;
+    border-color: rgb(128, 128, 128)*/
+}
+.pixelContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    z-index: 100;
+}
+
+.pixelContainer:hover{
+    cursor: crosshair;
+}
+
+h1 {
+    color:rgb(255, 255, 255);
+}
+.boardContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgb(81, 176, 214) 0%, rgb(48, 48, 141) 26%, rgba(255, 94, 0, 0.474) 62%);
+    padding: 1em;
+    border-radius: 50px;
+    background-repeat: repeat;
+    transition: all .5s linear;
+    animation: noneToFull;
+    animation-duration: 4s;
+}
+
+.pallette{
+    border-radius: 15px;
+    height: 2em;
+    width: 4em;
+    margin-top: 1em;
+}
+
+.pallette2{
+    border-radius: 15px;
+    height: 2em;
+    width: 4em;
+    margin-top: 1em;
+}
+
+.c137{
+    display: flex;
+    align-items: baseline;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.pallette:hover{
+    border-width: 3px;
+    border: white; 
+    border-style: solid;
+}
+
+.palSelect {
+    border-width: 3px;
+    border: white;
+    border-style: solid;
+}
+
+.controlsContainer{
+    display: flex;
+    width: 550px;
+    justify-content: space-around;
+}
+.boardContainer:hover{
+    background-position: 0, -100%;
+}
+
+.fancyColorFeatures{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.currentColor{
+    width: 10px;
+}
+
+html{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    background: gray;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    animation: blinkingBackground 20s infinite;
+    animation-direction: alternate;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+@keyframes blinkingBackground{
+    0%		{ background-color: #f0bf56;}
+    25%		{ background-color: #60c6f5;}
+    50%		{ background-color: #f18ec8;}
+    75%		{ background-color: #ecce7c;}
+    100%	        { background-color: #95ddf5;}
+}
+
+@keyframes noneToFull{
+    0%		{ transform: scale(0, 0);}
+    100%	{ transform: scale(1,1);}
+}
